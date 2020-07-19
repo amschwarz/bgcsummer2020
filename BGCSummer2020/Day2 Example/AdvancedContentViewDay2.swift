@@ -20,16 +20,7 @@ struct AdvancedContentViewDay2: View {
             ReusableView(image: buttonTapped ? "Beyonce" : "Rihanna", title: caption).frame(width: 300.0, height: 300.0, alignment: .center)
             
             Button(action: {
-                print("Button Tapped!")
-                self.buttonTapped = !self.buttonTapped
-                if self.buttonTapped {
-                    self.titleColor = Color.black
-                    self.backgroundColor = Color.black
-                } else {
-                    self.titleColor = Color.purple
-                    self.backgroundColor = Color.white
-                }
-
+                self.buttonWasTapped()
             }) {
                 if buttonTapped {
                     Text("You didn't listen!")
@@ -43,6 +34,18 @@ struct AdvancedContentViewDay2: View {
             
             Spacer()
         }.background(backgroundColor)
+    }
+    
+    func buttonWasTapped() {
+        print("Button Tapped!")
+        buttonTapped = !buttonTapped
+        if buttonTapped {
+            titleColor = Color.black
+            backgroundColor = Color.black
+        } else {
+            titleColor = Color.purple
+            backgroundColor = Color.white
+        }
     }
 }
 

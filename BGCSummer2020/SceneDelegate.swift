@@ -20,7 +20,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
 
         // Create the SwiftUI view that provides the window contents.
-        let contentView = AdvancedContentViewDay2()
+        
+        let contentView = ContentViewDay1()
+        
+        //Day 4 example content view with environment object
+        //let friends = Friends()
+        //let contentView = ContentListViewDay4().environmentObject(friends)
 
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {

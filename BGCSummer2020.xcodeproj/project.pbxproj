@@ -17,6 +17,11 @@
 		24A734DD24C37DAF0085373F /* ContentViewDay2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A734DC24C37DAF0085373F /* ContentViewDay2.swift */; };
 		24A734DF24C388730085373F /* AdvancedContentViewDay2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A734DE24C388730085373F /* AdvancedContentViewDay2.swift */; };
 		24A734E224C38B7B0085373F /* ContentViewDay3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A734E124C38B7B0085373F /* ContentViewDay3.swift */; };
+		24A734E424C4CC530085373F /* ReusableViewDay3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A734E324C4CC530085373F /* ReusableViewDay3.swift */; };
+		24A734E924C4D0C50085373F /* ContentListViewDay4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A734E824C4D0C50085373F /* ContentListViewDay4.swift */; };
+		24A734EB24C4D0DC0085373F /* DetailViewDay4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A734EA24C4D0DC0085373F /* DetailViewDay4.swift */; };
+		24A734ED24C4D10D0085373F /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A734EC24C4D10D0085373F /* Friend.swift */; };
+		24A734EF24C4DA690085373F /* FriendListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A734EE24C4DA690085373F /* FriendListRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +37,11 @@
 		24A734DC24C37DAF0085373F /* ContentViewDay2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewDay2.swift; sourceTree = "<group>"; };
 		24A734DE24C388730085373F /* AdvancedContentViewDay2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedContentViewDay2.swift; sourceTree = "<group>"; };
 		24A734E124C38B7B0085373F /* ContentViewDay3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewDay3.swift; sourceTree = "<group>"; };
+		24A734E324C4CC530085373F /* ReusableViewDay3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableViewDay3.swift; sourceTree = "<group>"; };
+		24A734E824C4D0C50085373F /* ContentListViewDay4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentListViewDay4.swift; sourceTree = "<group>"; };
+		24A734EA24C4D0DC0085373F /* DetailViewDay4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewDay4.swift; sourceTree = "<group>"; };
+		24A734EC24C4D10D0085373F /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
+		24A734EE24C4DA690085373F /* FriendListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendListRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +79,7 @@
 				24A734D824C378300085373F /* Day1 Example */,
 				24A734DB24C37D7A0085373F /* Day2 Example */,
 				24A734E024C38AC00085373F /* Day3 Example */,
+				24A734E524C4CFA00085373F /* Day4 Example */,
 				24A734CA24C371630085373F /* Assets.xcassets */,
 				24A734CF24C371630085373F /* LaunchScreen.storyboard */,
 				24A734D224C371630085373F /* Info.plist */,
@@ -107,8 +118,20 @@
 			isa = PBXGroup;
 			children = (
 				24A734E124C38B7B0085373F /* ContentViewDay3.swift */,
+				24A734E324C4CC530085373F /* ReusableViewDay3.swift */,
 			);
 			path = "Day3 Example";
+			sourceTree = "<group>";
+		};
+		24A734E524C4CFA00085373F /* Day4 Example */ = {
+			isa = PBXGroup;
+			children = (
+				24A734E824C4D0C50085373F /* ContentListViewDay4.swift */,
+				24A734EE24C4DA690085373F /* FriendListRow.swift */,
+				24A734EA24C4D0DC0085373F /* DetailViewDay4.swift */,
+				24A734EC24C4D10D0085373F /* Friend.swift */,
+			);
+			path = "Day4 Example";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,13 +205,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24A734E924C4D0C50085373F /* ContentListViewDay4.swift in Sources */,
+				24A734E424C4CC530085373F /* ReusableViewDay3.swift in Sources */,
+				24A734EF24C4DA690085373F /* FriendListRow.swift in Sources */,
 				24A734DD24C37DAF0085373F /* ContentViewDay2.swift in Sources */,
+				24A734EB24C4D0DC0085373F /* DetailViewDay4.swift in Sources */,
 				24A734C524C3715E0085373F /* AppDelegate.swift in Sources */,
 				24A734DF24C388730085373F /* AdvancedContentViewDay2.swift in Sources */,
 				24A734C724C3715E0085373F /* SceneDelegate.swift in Sources */,
 				24A734C924C3715E0085373F /* ContentViewDay1.swift in Sources */,
 				24A734DA24C37B2A0085373F /* ReusableView.swift in Sources */,
 				24A734E224C38B7B0085373F /* ContentViewDay3.swift in Sources */,
+				24A734ED24C4D10D0085373F /* Friend.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

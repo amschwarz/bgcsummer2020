@@ -9,31 +9,29 @@
 import SwiftUI
 
 struct ContentViewDay3: View {
-    @State var buttonTapped = false
-    @State var titleColor = Color.purple
-    @State var backgroundColor = Color.white
+    @State var count = 0
     
+    let people = ["Beyonce", "Rihanna", "Zendaya", "Serena"]
+    let highlight : [Color] = [.purple, .blue, .pink, .yellow]
+
     var body: some View {
         VStack {
-            Text("My App").font(.title).foregroundColor(titleColor)
-            ReusableView(image: buttonTapped ? "Beyonce" : "Rihanna", title: "My name is Rihanna")
+            Text("My App").font(.title).foregroundColor(highlight[count])
+            ReusableViewDay3(image: people[count], title: "My name is " + people[count], border: highlight[count])
             Spacer()
             
             Button(action: {
-                print("Button Tapped!")
-                self.buttonTapped = true
-                self.titleColor = Color.black
-                self.backgroundColor = Color.black
-            }) {
-                if buttonTapped {
-                    Text("You didn't listen!")
-                        .foregroundColor(Color.red)
+                print("Button Tapped! count = " + String(self.count))
+                if self.count == self.people.count - 1 {
+                    self.count = 0
                 } else {
-                    Text("Don't Press This Button").foregroundColor(Color.blue)
+                    self.count += 1
                 }
+            }) {
+                Text("Tap For Next").foregroundColor(Color.blue)
             }
             Spacer()
-        }.background(backgroundColor)
+        }.background(Color.white)
     }
 }
 
