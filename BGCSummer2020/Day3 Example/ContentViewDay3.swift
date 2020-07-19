@@ -21,17 +21,21 @@ struct ContentViewDay3: View {
             Spacer()
             
             Button(action: {
-                print("Button Tapped! count = " + String(self.count))
-                if self.count == self.people.count - 1 {
-                    self.count = 0
-                } else {
-                    self.count += 1
-                }
+                self.buttonWasTapped()
             }) {
                 Text("Tap For Next").foregroundColor(Color.blue)
             }
             Spacer()
         }.background(Color.white)
+    }
+    
+     func buttonWasTapped() {
+        print("Button Tapped! count = " + String(count))
+        if count == people.count - 1 {
+            count = 0
+        } else {
+            count += 1
+        }
     }
 }
 
